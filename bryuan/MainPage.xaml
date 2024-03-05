@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="bryuan.MainPage"
-             Shell.NavBarIsVisible="False"
              BackgroundColor="#7D7D7D"
              Shell.NavBarIsVisible="False"/>
 
@@ -58,11 +57,19 @@
                 TextColor="White"
                 CornerRadius="25"
                 FontAttributes="Bold"
-              
                 FontSize="18"
                 HeightRequest="50"
                 HorizontalOptions="FillAndExpand"
-                VerticalOptions="CenterAndExpand"/>
+                VerticalOptions="CenterAndExpand"
+                 Clicked="BotaoCreditos"/>
+                
+         <Frame x:Name="frameSettings"
+           IsVisible="false"
+           Margin="10,20"
+           CornerRadius="20"
+           BackgroundColor="#70b6b8"
+           HorizontalOptions="Fill"
+           VerticalOptions="Fill">
 
         </VerticalStackLayout>
     </ScrollView>
