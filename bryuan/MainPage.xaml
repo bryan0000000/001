@@ -2,20 +2,70 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="bryuan.MainPage"
-             BackgroundColor="#7D7D7D">
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#7D7D7D"
+             Shell.NavBarIsVisible="False"/>
+
+    
+
 
     <ScrollView>
         <VerticalStackLayout
           VerticalOptions="Fill">  
            
-<Image
+          <Label
+                 Text="cyberbullying"
+                 TextColor="#edf0f5"
+                 FontSize="70"
+                 HorizontalOptions="FillAndExpand"
+                 HorizontalTextAlignment="Center"
+                 VerticalOptions="FillAndExpand"
+                 VerticalTextAlignment="Center"
+                 FontFamily="Papyrus"/>
+                
+             
+
+          <Image
               Margin="2"
               HeightRequest="120"
-              Source="macaco.png"
+              Source="cagada.png"
               Aspect="AspectFill"
-              VerticalOptions="Fill"/> 
+              VerticalOptions="Fill"
+             Aspect="AspectFill"/>
+         
+ <Button Text="START"
+                BackgroundColor="#3c1347"
+                TextColor="White"
+                CornerRadius="25"
+                FontAttributes="Bold"
+                
+                FontSize="18"
+                HeightRequest="50"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="CenterAndExpand"/>
+ 
+
+            <Label 
+                Text=""
+                TextColor="#7D7D7D"
+                FontSize="17"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"/>
+
+
+ <Button Text="creditos"
+                BackgroundColor="#3c1347"
+                TextColor="White"
+                CornerRadius="25"
+                FontAttributes="Bold"
+              
+                FontSize="18"
+                HeightRequest="50"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="CenterAndExpand"/>
 
         </VerticalStackLayout>
     </ScrollView>
+
 
 </ContentPage>
