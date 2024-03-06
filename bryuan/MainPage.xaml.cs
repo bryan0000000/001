@@ -2,6 +2,8 @@
 
 public partial class MainPage : ContentPage
 {
+
+
 	
 
 	public MainPage()
@@ -10,8 +12,10 @@ public partial class MainPage : ContentPage
 	}
 private void BotaoCreditos(object sender, EventArgs args)
   {
-    frameSettings.IsVisible = true;
+   // frameSettings.IsVisible = true;
 
-	}
+  }
 
 
+
+}

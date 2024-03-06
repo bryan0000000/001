@@ -3,76 +3,65 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="bryuan.MainPage"
              BackgroundColor="#7D7D7D"
-             Shell.NavBarIsVisible="False"/>
+             Shell.NavBarIsVisible="False">
 
+    <Grid>
+      
+
+
+        <ScrollView>
+            <VerticalStackLayout
+                VerticalOptions="Fill">  
+                    
+                <Image
+                    Source="fodido.jpg"
+                    Aspect="AspectFill"/>
+                
+
+                <Label
+                    Text="cyberbullying"
+                    TextColor="#edf0f5"
+                    FontSize="25"
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center"
+                    VerticalOptions="FillAndExpand"
+                    VerticalTextAlignment="Center"                       
+                    />
+
+
+
+
+
+                <Button Text="START"
+                    BackgroundColor="#3c1347"
+                    TextColor="White"
+                    CornerRadius="25"
+                    FontAttributes="Bold"
+                    Grid.Row="2"
+                    FontSize="18"
+                    HeightRequest="50"
+                    Margin="10"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="CenterAndExpand"/>
     
 
 
-    <ScrollView>
-        <VerticalStackLayout
-          VerticalOptions="Fill">  
-           
-          <Label
-                 Text="cyberbullying"
-                 TextColor="#edf0f5"
-                 FontSize="70"
-                 HorizontalOptions="FillAndExpand"
-                 HorizontalTextAlignment="Center"
-                 VerticalOptions="FillAndExpand"
-                 VerticalTextAlignment="Center"
-                 FontFamily="Papyrus"/>
-                
-             
 
-          <Image
-              Margin="2"
-              HeightRequest="120"
-              Source="cagada.png"
-              Aspect="AspectFill"
-              VerticalOptions="Fill"
-             Aspect="AspectFill"/>
-         
- <Button Text="START"
-                BackgroundColor="#3c1347"
-                TextColor="White"
-                CornerRadius="25"
-                FontAttributes="Bold"
-                
-                FontSize="18"
-                HeightRequest="50"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="CenterAndExpand"/>
- 
+                <Button Text="creditos"
+                    BackgroundColor="#3c1347"
+                    TextColor="White"
+                    CornerRadius="25"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HeightRequest="50"
+                     Margin="10"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="BotaoCreditos"/>
+            
 
-            <Label 
-                Text=""
-                TextColor="#7D7D7D"
-                FontSize="17"
-                FontAttributes="Bold"
-                HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
+        </ScrollView>
 
-
- <Button Text="creditos"
-                BackgroundColor="#3c1347"
-                TextColor="White"
-                CornerRadius="25"
-                FontAttributes="Bold"
-                FontSize="18"
-                HeightRequest="50"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="CenterAndExpand"
-                 Clicked="BotaoCreditos"/>
-                
-         <Frame x:Name="frameSettings"
-           IsVisible="false"
-           Margin="10,20"
-           CornerRadius="20"
-           BackgroundColor="#70b6b8"
-           HorizontalOptions="Fill"
-           VerticalOptions="Fill">
-
-        </VerticalStackLayout>
-    </ScrollView>
-
-
+    </Grid>
 </ContentPage>
