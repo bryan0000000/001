@@ -6,17 +6,15 @@
              Shell.NavBarIsVisible="False">
 
     <Grid>
-      
-
-
-        <ScrollView>
-            <VerticalStackLayout
-                VerticalOptions="Fill">  
-                    
+          
                 <Image
                     Source="fodido.jpg"
                     Aspect="AspectFill"/>
-                
+
+        <ScrollView>  
+            <VerticalStackLayout
+                VerticalOptions="Fill">  
+                    
 
                 <Label
                     Text="cyberbullying"
@@ -24,10 +22,10 @@
                     FontSize="25"
                     HorizontalOptions="FillAndExpand"
                     HorizontalTextAlignment="Center"
-                    VerticalOptions="FillAndExpand"
-                    VerticalTextAlignment="Center"                       
-                    />
-
+                    Grid.Row="1"
+                    VerticalOptions="FillAndExpand"                  
+                    VerticalTextAlignment="Center"/>
+                  
 
 
 
@@ -37,14 +35,13 @@
                     TextColor="White"
                     CornerRadius="25"
                     FontAttributes="Bold"
-                    Grid.Row="2"
                     FontSize="18"
-                    HeightRequest="50"
+                    HeightRequest="50"               
                     Margin="10"
                     HorizontalOptions="FillAndExpand"
-                    VerticalOptions="CenterAndExpand"/>
-    
-
+                    VerticalOptions="CenterAndExpand"
+                    Grid.Row="0"/>
+                    
 
 
                 <Button Text="creditos"
@@ -54,11 +51,15 @@
                     FontAttributes="Bold"
                     FontSize="18"
                     HeightRequest="50"
-                     Margin="10"
+                    Margin="10"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="CenterAndExpand"
                     Clicked="BotaoCreditos"/>
             
+               <Grid.RowDefinitions>
+                  <RowDefinition Height="50"/> 
+                  <RowDefinition Height="50"/> 
+               </Grid.RowDefinitions>
 
             </VerticalStackLayout>
         </ScrollView>
