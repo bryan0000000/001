@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bryuan.JogoPage"
+             BackgroundColor="#7D7D7D"
+             Shell.NavBarIsVisible="False">
+
+
+     <Label
+            Text="cyberbullying"
+            TextColor="#edf0f5"
+            FontSize="50"
+            HorizontalOptions="FillAndExpand"
+            HorizontalTextAlignment="Center"
+            VerticalOptions="FillAndExpand"                  
+            VerticalTextAlignment="Center"/>
+            
+            
+            
+<ContentPage/>

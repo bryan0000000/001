@@ -20,7 +20,7 @@
                 <Label
                     Text="cyberbullying"
                     TextColor="#edf0f5"
-                    FontSize="25"
+                    FontSize="50"
                     HorizontalOptions="FillAndExpand"
                     HorizontalTextAlignment="Center"
                     VerticalOptions="FillAndExpand"                  
@@ -29,10 +29,12 @@
 
                 <Label
                     Text=""
-                    Margin="100"/>
+                    Margin="180"/>
 
-                <Button Text="START"
-                    BackgroundColor="#3c1347"
+                <Button 
+                    Text="START"
+                    xName="BotaoSTART"
+                    BackgroundColor="#f242f5"
                     TextColor="White"
                     CornerRadius="25"
                     FontAttributes="Bold"
@@ -40,12 +42,13 @@
                     HeightRequest="50"               
                     Margin="10"
                     HorizontalOptions="FillAndExpand"
+                    Clicked="botaoSTART"
                     VerticalOptions="CenterAndExpand"/>
                     
 
 
                 <Button Text="creditos"
-                    BackgroundColor="#3c1347"
+                    BackgroundColor="#f242f5"
                     TextColor="White"
                     CornerRadius="25"
                     FontAttributes="Bold"

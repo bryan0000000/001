@@ -16,6 +16,10 @@ private void BotaoCreditos(object sender, EventArgs args)
 
   }
 
-
+private void botaoSTART(object sender, EventArgs args)
+  {
+    if (Application.Current != null)
+      Application.Current.MainPage = new JogoPage();
+  }
 
 }
