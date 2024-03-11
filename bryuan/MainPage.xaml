@@ -31,9 +31,8 @@
                     Text=""
                     Margin="180"/>
 
-                <Button 
+                <Button x:Name="BotaoSTART"
                     Text="START"
-                    xName="BotaoSTART"
                     BackgroundColor="#f242f5"
                     TextColor="White"
                     CornerRadius="25"
@@ -42,7 +41,7 @@
                     HeightRequest="50"               
                     Margin="10"
                     HorizontalOptions="FillAndExpand"
-                    Clicked="botaoSTART"
+                    Clicked="start"
                     VerticalOptions="CenterAndExpand"/>
                     
 
