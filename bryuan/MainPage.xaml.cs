@@ -10,10 +10,14 @@ public partial class MainPage : ContentPage
 	{
       InitializeComponent();
 	}
-private void BotaoCreditos(object sender, EventArgs args)
+private void bbcreditos(object sender, EventArgs args)
   {
-   // frameSettings.IsVisible = true;
+    frameAbout.IsVisible = true;
+  }
 
+   private void botaovoltar(object sender, EventArgs args)
+  {
+    frameAbout.IsVisible = false;
   }
 
 private void start(object sender, EventArgs args)
@@ -22,4 +26,5 @@ private void start(object sender, EventArgs args)
       Application.Current.MainPage = new JogoPage();
   }
 
-}
+
+  }

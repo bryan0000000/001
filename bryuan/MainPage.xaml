@@ -46,7 +46,8 @@
                     
 
 
-                <Button Text="creditos"
+                <Button 
+                    Text="creditos"
                     BackgroundColor="#f242f5"
                     TextColor="White"
                     CornerRadius="25"
@@ -56,12 +57,44 @@
                     Margin="10"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="CenterAndExpand"
-                    Clicked="BotaoCreditos"/>
+                    Clicked="bbcreditos"/>
             
+                 <Frame 
+                    x:Name="frameAbout"
+                    IsVisible="false"
+                    Margin="10,20"
+                    CornerRadius="20"
+                    BackgroundColor="#3f343a"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Fill"/>
+                    >
               
+
+                <Label 
+                    Text="realizado pelo Bryan Alves Borela e kawan da Silva Costa, foi feito no dia 04/03/2024 e foi finalizado no ()..."
+                    TextColor="#edf0f5"
+                    FontSize="50"
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center"
+                    VerticalOptions="FillAndExpand"                  
+                    VerticalTextAlignment="Center"/>
+                  
+
+                <Button x:Name="voltar"
+                    Text="voltar"
+                     Grid.Row="1"
+                    BackgroundColor="#f242f5"
+                    TextColor="White"
+                    CornerRadius="25"
+                    FontAttributes="Bold"
+                    FontSize="18"
+                    HeightRequest="50"               
+                    Margin="10"
+                    HorizontalOptions="FillAndExpand"
+                    Clicked="botaovoltar"
+                    VerticalOptions="CenterAndExpand"/>
 
             </VerticalStackLayout>
         </ScrollView>
-
     </Grid>
 </ContentPage>

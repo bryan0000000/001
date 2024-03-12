@@ -27,20 +27,6 @@
             VerticalOptions="FillAndExpand"                  
             VerticalTextAlignment="Center"/>
             
-            
-        
-                <Button x:Name="voltar"
-                    Text="voltar"
-                     Grid.Row="1"
-                    BackgroundColor="#f242f5"
-                    TextColor="White"
-                    CornerRadius="25"
-                    FontAttributes="Bold"
-                    FontSize="18"
-                    HeightRequest="50"               
-                    Margin="10"
-                    HorizontalOptions="FillAndExpand"
-                    Clicked="botaovoltar"
-                    VerticalOptions="CenterAndExpand"/>
+          
  </Grid>
 </ContentPage>
