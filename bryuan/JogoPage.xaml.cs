@@ -34,17 +34,18 @@ List<Historia.JogoPage> historia = new List<Historia.JogoPage>();
      Historia.JogoPage.Add(new HistoriaDia()
 
 {
-				Id = 2,
-				Texto = "eita pocha o muleke ta avançado",
-				vaiterresposta=false,
+	      Id = 2,
+	      Texto = "eita pocha o muleke ta avançado",
+	      vaiterresposta=false,
 
 });
    Historia.JogoPage.Add(new HistoriaDia()
 
    {
-              Id = -1,
-			  Texto = "meu deus, seu preto tu não conseque fazer um buling direito, seu estranho",
-			  vaiterresposta=false,
+              Id =-1,
+              Texto = "meu deus, seu preto tu não conseque fazer um buling direito, seu estranho",
+	      mamouotario=true,
+              vaiterresposta=false,
    });
 
 
@@ -52,7 +53,7 @@ List<Historia.JogoPage> historia = new List<Historia.JogoPage>();
 
   { 
         Id = 3,
-			  Texto = "ae vo ti mostras o cara, mais soeiro da sidadi, bora la?",
+	Texto = "ae vo ti mostras o cara, mais soeiro da sidadi, bora la?",
         vaiterresposta=true,
         RespostasDoTexto01="Bora po",
         RespostasDoTexto02="to fora irmão, mais eu topo dar um passeio.",
@@ -63,16 +64,15 @@ List<Historia.JogoPage> historia = new List<Historia.JogoPage>();
  { 
        
   
-        Id = 4,
-			  Texto = "vo ti leva ate la",
-			  vaiterresposta=false,
+         Id = 4,
+         Texto = "vo ti leva ate la",
+         vaiterresposta=false,
 
   });
   
      Historia.JogoPage.Add(new HistoriaDia() 
 
   {
-
           Id = 5,
           Texto = " ok...",
           vaiterresposta=false,   
@@ -133,27 +133,93 @@ List<Historia.JogoPage> historia = new List<Historia.JogoPage>();
           Id = 10,
           Texto = "uau o cabra é zuera, e inteligente como uma porta, entretanto infelismente nao há espaço para dois nesse lindo mundo de merda...",
           mamouotario=true,
+           vaiterresposta=false,   
 
 
   });
 
 
 
+  {
+         Historia.JogoPage.Add(new HistoriaDia() 
 
+          Id = 11,
+          Texto = "uau vc é tao zuera quanto uma pedra, irmao vc esta apto para ser meu amigo...",
+          finalbom=true
+          vaiterresposta=false,  
 
+  });
+  Iniciar();
 
+ }
+ 
+ void Iniciar()
+ {
+    Historia.JogoPagetroca(0)
+ }
+ void preenceherP()
+ {
+  labelfala.text=Historia.JogoPagetroca
+ 
+   if(Historia.JogoPagetroca.mamouotario)
+     frameMamouotario.IsVisible = true;
+ else
+     frameMamouotario.IsVisible = false;
+ 
+     if(Historia.JogoPagetroca.vaiterresposta)
+ 
+ {
+   botaoVer.IsVisible = false;     
+   buttonResposta01.IsVisible = true;
+   buttonResposta02.IsVisible = true;
+   buttonResposta01.Text = Historia.JogoPagetroca.RespostasDoTexto01;
+   buttonResposta02.Text = Historia.JogoPagetroca.RespostasDoTexto02;
+ }
+ 
+  else
+ {
+ botaoVer.IsVisible = true;
+buttonResposta01.IsVisible = false;
+buttonResposta02.IsVisible = false;
 
-
-
-
-
-
-
-
-
-
-
-
-
+ }
 
 }
+
+
+  void botaover(object sender, EventArgs args)
+  {
+    var proximoId = HistoryStepAtual.Id + 1;
+     Historia.JogoPagetroca(proximoId);
+  }
+
+  
+
+  void OnButton01Clicked(object sender, EventArgs args)
+  {
+    TrocaHistoryStepAtual(HistoryStepAtual.IdLevelResposta01);
+  }
+
+  
+
+  void OnButton02Clicked(object sender, EventArgs args)
+  {
+    TrocaHistoryStepAtual(HistoryStepAtual.IdLevelResposta02);
+  }
+
+  
+
+  void OnButton03Clicked(object sender, EventArgs args)
+  {
+    TrocaHistoryStepAtual(HistoryStepAtual.IdLevelResposta03);
+  }
+
+  
+
+  void OnGameOverButtonClicked(object sender, EventArgs args)
+  {
+    Iniciar();
+  }
+
+
+

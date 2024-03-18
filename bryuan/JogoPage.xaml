@@ -17,15 +17,13 @@
 
 
 
-     <Label
-            Text="cyberbullying"
-             Grid.Row="0"
-            TextColor="#edf0f5"
-            FontSize="50"
-            HorizontalOptions="FillAndExpand"
-            HorizontalTextAlignment="Center"
-            VerticalOptions="FillAndExpand"                  
-            VerticalTextAlignment="Center"/>
+     <Label x:name="labelfala"
+           TextColor="#edf0f5"
+           FontSize="50"
+           HorizontalOptions="FillAndExpand"
+           HorizontalTextAlignment="Center"
+           VerticalOptions="FillAndExpand"                  
+           VerticalTextAlignment="Center"/>
             
           
  </Grid>
