@@ -1,4 +1,4 @@
-public class Historia.JogoPage
+public class Historiadojogos
 {
   public int Id; // serve para organizar a historia, como o jeck stripador vamos por partes 
   public string? Texto;// as falas

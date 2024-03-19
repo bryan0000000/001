@@ -2,14 +2,14 @@ namespace bryuan;
 
 public partial class JogoPage : ContentPage
 {
-List<Historia.JogoPage> historia = new List<Historia.JogoPage>();
-  Historia.JogoPage HistoriaDia;
+List<historiadojogo> historia = new List<historiadojogo>();
+  Historiadojogo Historiadojogoatual;
 	public JogoPage()
 	{
       InitializeComponent();
 	}
   
-  Historia.JogoPage.Add(new HistoriaDia()
+  Historia.Add(new historiadojogo()
 
 				  {
 				
@@ -18,7 +18,7 @@ List<Historia.JogoPage> historia = new List<Historia.JogoPage>();
 				vaiterresposta=false
 				  });
 
-        Historia.JogoPage.Add(new HistoriaDia()
+        Historia.Add(new historiadojogo()
 
  {
                 Id = 1,
@@ -31,7 +31,7 @@ List<Historia.JogoPage> historia = new List<Historia.JogoPage>();
 
 });
 
-     Historia.JogoPage.Add(new HistoriaDia()
+     Historia.Add(new historiadojogo()
 
 {
 	      Id = 2,
@@ -39,17 +39,17 @@ List<Historia.JogoPage> historia = new List<Historia.JogoPage>();
 	      vaiterresposta=false,
 
 });
-   Historia.JogoPage.Add(new HistoriaDia()
+   Historia.Add(new historiadojogo()
 
    {
               Id =-1,
               Texto = "meu deus, seu preto tu não conseque fazer um buling direito, seu estranho",
-	      mamouotario=true,
+	            mamouotario=true,
               vaiterresposta=false,
    });
 
 
-    Historia.JogoPage.Add(new HistoriaDia()
+    Historia.Add(new historiadojogo()
 
   { 
         Id = 3,
@@ -60,7 +60,7 @@ List<Historia.JogoPage> historia = new List<Historia.JogoPage>();
         IdResposta01=4,
         IdResposta02=5, 
  });
-     Historia.JogoPage.Add(new HistoriaDia()
+     Historia.Add(new historiadojogo()
  { 
        
   
@@ -70,7 +70,7 @@ List<Historia.JogoPage> historia = new List<Historia.JogoPage>();
 
   });
   
-     Historia.JogoPage.Add(new HistoriaDia() 
+     Historia.Add(new historiadojogo() 
 
   {
           Id = 5,
@@ -80,7 +80,7 @@ List<Historia.JogoPage> historia = new List<Historia.JogoPage>();
   });
 
 
-         Historia.JogoPage.Add(new HistoriaDia() 
+         Historia.Add(new historiadojogo() 
    
   {
 
@@ -90,7 +90,7 @@ List<Historia.JogoPage> historia = new List<Historia.JogoPage>();
 
   });
 
-         Historia.JogoPage.Add(new HistoriaDia() 
+         Historia.Add(new historiadojogo() 
    
   {
 
@@ -105,7 +105,7 @@ List<Historia.JogoPage> historia = new List<Historia.JogoPage>();
   });
 
 
-         Historia.JogoPage.Add(new HistoriaDia() 
+         Historia.Add(new historiadojogo() 
   {
           Id = 8,
           Texto = " quer morrer anão de jardin, quem tu pensas que é pra falar do meu geito em ou mindinho do lula ",
@@ -113,7 +113,7 @@ List<Historia.JogoPage> historia = new List<Historia.JogoPage>();
           mamouotario=true,
 });
 
-        Historia.JogoPage.Add(new HistoriaDia() 
+        Historia.Add(new historiadojogo() 
 
 
 {
@@ -128,7 +128,7 @@ List<Historia.JogoPage> historia = new List<Historia.JogoPage>();
  });
 
   {
-         Historia.JogoPage.Add(new HistoriaDia() 
+         Historia.Add(new historiadojogo() 
 
           Id = 10,
           Texto = "uau o cabra é zuera, e inteligente como uma porta, entretanto infelismente nao há espaço para dois nesse lindo mundo de merda...",
@@ -141,7 +141,7 @@ List<Historia.JogoPage> historia = new List<Historia.JogoPage>();
 
 
   {
-         Historia.JogoPage.Add(new HistoriaDia() 
+         Historia.Add(new historiadojogo() 
 
           Id = 11,
           Texto = "uau vc é tao zuera quanto uma pedra, irmao vc esta apto para ser meu amigo...",
@@ -154,10 +154,14 @@ List<Historia.JogoPage> historia = new List<Historia.JogoPage>();
  }
  
  void Iniciar()
+
+
  {
     Historia.JogoPagetroca(0)
  }
  void preenceherP()
+
+
  {
   labelfala.text=Historia.JogoPagetroca
  
@@ -172,8 +176,8 @@ List<Historia.JogoPage> historia = new List<Historia.JogoPage>();
    botaoVer.IsVisible = false;     
    buttonResposta01.IsVisible = true;
    buttonResposta02.IsVisible = true;
-   buttonResposta01.Text = Historia.JogoPagetroca.RespostasDoTexto01;
-   buttonResposta02.Text = Historia.JogoPagetroca.RespostasDoTexto02;
+  Historia.JogoPagetroca.Respostas buttonResposta01.Text = DoTexto01;
+   buttonResposta02.Text = fHistoria.JogoPagetroca.RespostasDoTexto02;
  }
  
   else
@@ -195,28 +199,20 @@ buttonResposta02.IsVisible = false;
 
   
 
-  void OnButton01Clicked(object sender, EventArgs args)
+  void RespostasDoTexto01(object sender, EventArgs args)
   {
-    TrocaHistoryStepAtual(HistoryStepAtual.IdLevelResposta01);
+   Historia.JogoPagetroca(HistoryStepAtual.IdLevelResposta01);
   }
 
   
 
-  void OnButton02Clicked(object sender, EventArgs args)
+  void RespostasDoTexto02(object sender, EventArgs args)
   {
-    TrocaHistoryStepAtual(HistoryStepAtual.IdLevelResposta02);
+    Historia.JogoPagetroca(HistoryStepAtual.IdLevelResposta02);
   }
-
   
 
-  void OnButton03Clicked(object sender, EventArgs args)
-  {
-    TrocaHistoryStepAtual(HistoryStepAtual.IdLevelResposta03);
-  }
-
-  
-
-  void OnGameOverButtonClicked(object sender, EventArgs args)
+  void mamouotario(object sender, EventArgs args)
   {
     Iniciar();
   }
